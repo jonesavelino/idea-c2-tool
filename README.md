@@ -24,12 +24,12 @@ Este projeto possui as seguintes dependências:
 - Para executar o experimento é importante seguir o passo a passo das ações do caderno do projeto.
 - 1) Recuperar o Glossário de Termos do EB (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/298/1/C-20-1.pdf)
 - 2) Rodar as operações de:
-- 2.1) Etapa 1: Pré-anotação (IDEA-C2-Metamodel - Entity e Relations) - Gerar arquivos JSONL para curadoria no Doccano
-- 2.1) Etapa 2: Recuperar documentos curados no Doccano (JSONL) para gerar arquivo .SpaCy;
-- 2.2) Etapa 2: Rodar NER;
-- 2.3) Etapa 3: Rodar RE;
-- 2.4) Etapa 4: Rodar NE + RR;
-- 2.5) Arquivo de saída: arquivos já triplificado (sujeito, predicado e objeto) para ser importado no repositório no GraphDB: saida.n3
+- 2.1) Etapa 1: Pré-anotação (IDEA-C2-Metamodel - Entity e Relations) - Gerar arquivos JSONL para curadoria no Doccano (IDEA-ETAPA 1-Pre-Anotacao.ipynb);
+- 2.2) Etapa 2: Recuperar documentos curados no Doccano (JSONL) para gerar arquivo .SpaCy (IDEA-ETAPA 2-ConverterDoccanoSpacy3-2.ipynb);
+- 2.3) Etapa 3: Rodar NER (IDEA-ETAPA 3-FineTuneBERT_Spacy_NER.ipynb);
+- 2.4) Etapa 4: Rodar RE (IDEA-ETAPA 4-FineTunBERT_Spacy_RE.ipynb);
+- 2.5) Etapa 5: Rodar NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb);
+- 2.6) Arquivo de saída: arquivos já triplificado (sujeito, predicado e objeto) para ser importado no repositório no GraphDB: saida.n3
 
 # Trabalhos e publicações
 - Projeto de pesquisa.
