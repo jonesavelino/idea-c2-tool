@@ -5,7 +5,7 @@ IDEA-Tool é um protótipo de software baseado na abordagem IDEA (extractIon of 
 Projeto de pesquisa acadêmica para criar grafos de conhecimento a partir de textos.
 
 # Fonte da Base de dados Textuais para Treinamento
-- 
+- Glossário de Termos do EB (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/298/1/C-20-1.pdf)
 
 # Pré-requisito
 Este projeto possui as seguintes dependências:
