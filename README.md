@@ -1,35 +1,51 @@
-# IDEA-Tool
-IDEA-Tool é um protótipo de software baseado na abordagem IDEA (extractIon of knowleDge graphs basEd on Artificial intelligence) que tem o objetivo de extrair e interligar grafos de conhecimento, apoiado por um modelo de linguagem de IA, a partir de textos não estruturados.
+This repository contains the source code and data used in the experiment for the article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: XXXX**)
 
-# Descrição do Projeto
-Projeto de pesquisa acadêmica para criar grafos de conhecimento a partir de textos.
+# IDEA-C2-Tool
+IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge graphs basEd on Artificial intelligence of C2 Domain), which is a hybrid approach hat supports Domain Model (DM) development by combining Data-Driven (DD) and Theory-Driven (TD) components, leveraging semantic resources and a metamodel to produce a fine-tuned Large Languagem Model (LLM) and a Knowledge Graph (KG) focused on the military domain.
 
-# Fonte da Base de dados Textuais para Treinamento
-- Glossário de Termos do EB (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/298/1/C-20-1.pdf)
+# Source of Textual Database for LLM Training
+- Glossário de Termos do EB (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/298/1/C-20-1.pdf) - **Semantic Resource (SR)**
+- **Excerpts from Military doctrines**:
+  - Movimento e Manobra (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/80/1/EB20-MC-10.203.pdf)
+  - Inteligência (link: https://bdex.eb.mil.br/jspui/bitstream/1/2595/1/EB20-MC-10.207.pdf)
+  - Doutrina Militar Terrestre (https://bdex.eb.mil.br/jspui/bitstream/123456789/11768/1/EB20MF10102.pdf)
+  - Doutrina de Operações Conjuntas - Vol I (https://www.gov.br/defesa/pt-br/arquivos/ajuste-01/legislacao/emcfa/publicacoes/doutrina/md30-m-01-vol-1-2a-edicao-2020-dou-178-de-15-set.pdf)
+  - Doutrina de Garantia da Lei e da Ordem (GLO) (https://www.gov.br/defesa/pt-br/arquivos/ajuste-01/2014/mes02/md33-m-10-garantia-da-lei-e-da-ordem-2a-ed-2014-31-jan.pdf)
+  - Doutrina de Operações (https://bdex.eb.mil.br/jspui/bitstream/1/848/3/EB70-MC-10.223-%20Opera%c3%a7%c3%b5es)
+  - Manual de Campanha - As comunicações nas operações (https://bdex.eb.mil.br/jspui/bitstream/123456789/7073/1/EB70-MC-10.246_PDF.pdf)
 
-# Pré-requisito
-Este projeto possui as seguintes dependências:
+# Pre-requisite
+- [PreAnoTeTool] (https://github.com/jonesavelino/preanotetool) responsible for pre-annotating the texts in the corpus using the Command and Control Relations Metamodel (C2RM) of the IDEA-C2 approach.
+- [Python 3.10.12] (https://www.python.org/downloads/release/python-31012/) programming language to run the libraries and development.
+- [Google Colab Pro] Integrated Development Environment (IDE), in notebook format, for implementing and executing source code, using the Python programming language.
+- [GraphDB 9.11] (https://www.ontotext.com/products/graphdb/graphdb-free/) is a database for dealing with Graphs that allows the manipulation of data based on RDF Graphs and uses the SPARQL language for retrieval and query processing. (Not mandatory!).
 
-- [Python 3.10.12] (https://www.python.org/downloads/release/python-31012/) linguagem de programação para rodar as bibliotecas e desenvolvimento.
-- [Google Colab Pro] é um ambiente que oferece essa abordagem de Notebooks cujo objetivo é rodar códigos escritos em Python.
-- [GraphDB 9.11] (https://www.ontotext.com/products/graphdb/graphdb-free/) é um banco de dados para lidar com Grafos que permite a manipulação de dados baseados em Grafos RDF e utiliza a linguagem SPARQL para recuperação e processamento de consultas. Além disso, é uma ferramenta que possibilita a descoberta de conhecimento a partir de inferências das relações dos recursos.
+- **Bibliotecas**: 
+  - [SpaCy 3.5] it is a machine learning library focused on Natural Language Processing (NLP). 
+  - [Pipeline] pt_core_news_sm (https://spacy.io/models/pt) (customizable)
+  - [Architecture] spacy-transformers.TransformerModel.v3 (https://spacy.io/universe/project/spacy-transformers)
+  - [Large Language Model] neuralmind/bert-base-portuguese-cased (https://github.com/neuralmind-ai/portuguese-bert) (BERTimbau)
+  - [RDFLib] - Python library for working with RDF (RDF, N3, and TTL extensions)
+  - [Graphviz] - Library that allows you to visualize RDF graphs visually. (https://pypi.org/project/graphviz/) (Optional)
+  - [PyPDF2] - PDF library capable of splitting, merging, cropping, and transforming PDF file pages. (https://pypi.org/project/PyPDF2/)
+  - [PyDotPlus] - Python library based on the evolution of pydot that provides a Python interface to the Graphviz Dot language. (https://pypi.org/project/pydotplus/)
 
-- Bibliotecas: 
-- [SpaCy 3.5] é uma biblioteca de aprendizado de máquina.  
-- [Pipeline] pt_core_news_sm (https://spacy.io/models/pt)
-- [Arquitetura] spacy-transformers.TransformerModel.v3 (https://spacy.io/universe/project/spacy-transformers)
-- [Modelo de linguagem] neuralmind/bert-base-portuguese-cased (https://github.com/neuralmind-ai/portuguese-bert)
+# Experiment
+- To carry out the experiment, it is important to follow the step-by-step actions in the project booklet..
+  - 1) Recover the "Glossário de Termos do EB" (SR) (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/298/1/C-20-1.pdf)
+  - 2) Run the operations: (it corresponds to the stages of the IDEA-C2 sub-processes: Corpus Annotation and Language model Fine-Tuning)  
+    - 2.1) Step 1: Pré-anotação (IDEA-C2-Metamodel - Entity e Relations) - Generate JSONL files for curation in Doccano (IDEA-ETAPA 1-Pre-Anotacao.ipynb);
+    - 2.2) Step 2: Retrieve documents curated in Doccano (JSONL) to generate file .SpaCy (IDEA-ETAPA 2-ConverterDoccanoSpacy3-2.ipynb);
+    - 2.3) Step 3: Run NER (IDEA-ETAPA 3-FineTuneBERT_Spacy_NER.ipynb);
+    - 2.4) Step 4: Run RE (IDEA-ETAPA 4-FineTunBERT_Spacy_RE.ipynb);
+  - 3) Run de operations: (it corresponds to the stages of the IDEA-C2 sub-process: Trained language model application)
+model application;
+    - 3.1) Step 5: Run NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb): Submit texts for IDEA-C2-LM to infer named entities and extract relationships;
+  - 4) Run de operations: (it corresponds to the stages of the IDEA-C2 sub-process: Conceptual Modeling)
+    - 4.1) Step 6: Run Graph (IDEA-Graph.ipynb): Retrieves the curated .JSOL file from Doccano to generate the RDF graph in .TTL format. From this TTL file it is possible to execute SPARQL queries, exploiting the properties of the C2RM metamodel. It also retrieves the lists of inferences from Etapa-5 Run NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb) to generate graph visualization and integrate it into IDEA-C2-KG.
 
-# Experimento
-- Para executar o experimento é importante seguir o passo a passo das ações do caderno do projeto.
-- 1) Recuperar o Glossário de Termos do EB (link: https://bdex.eb.mil.br/jspui/bitstream/123456789/298/1/C-20-1.pdf)
-- 2) Rodar as operações de:
-- 2.1) Etapa 1: Pré-anotação (IDEA-C2-Metamodel - Entity e Relations) - Gerar arquivos JSONL para curadoria no Doccano (IDEA-ETAPA 1-Pre-Anotacao.ipynb);
-- 2.2) Etapa 2: Recuperar documentos curados no Doccano (JSONL) para gerar arquivo .SpaCy (IDEA-ETAPA 2-ConverterDoccanoSpacy3-2.ipynb);
-- 2.3) Etapa 3: Rodar NER (IDEA-ETAPA 3-FineTuneBERT_Spacy_NER.ipynb);
-- 2.4) Etapa 4: Rodar RE (IDEA-ETAPA 4-FineTunBERT_Spacy_RE.ipynb);
-- 2.5) Etapa 5: Rodar NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb);
-- 2.6) Arquivo de saída: arquivos já triplificado (sujeito, predicado e objeto) para ser importado no repositório no GraphDB: saida.n3
+# Publications
+- Article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: XXXX**)
 
-# Trabalhos e publicações
-- Projeto de pesquisa.
+# Acknowledgments
+- This research has been funded by FINEP/DCT/FAPEB (no. 2904/20 - 01.20.0272.00) under the “Systems of Command and Control Systems” project (“Sistemas de Sistemas de Comando e Controle”, in Portuguese). We would also like to thank the domain experts who contributed to the experiment.
