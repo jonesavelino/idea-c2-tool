@@ -42,7 +42,7 @@ IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge g
 model application;
     - 3.1) Step 5: Run NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb): Submit texts for IDEA-C2-LM to infer named entities and extract relationships;
   - 4) Run de operations: (it corresponds to the stages of the IDEA-C2 sub-process: Conceptual Modeling)
-    - 4.1) Step 6: Run Graph (IDEA-Graph.ipynb): Retrieves the curated .JSOL file from Doccano to generate the RDF graph in .TTL format. From this TTL file it is possible to execute SPARQL queries, exploiting the properties of the C2RM metamodel. It also retrieves the lists of inferences from Etapa-5 Run NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb) to generate graph visualization and integrate it into IDEA-C2-KG.
+    - 4.1) Step 6: Conceptual Modeling: (Etapa 6 - Graph.ipynb): Retrieves the curated .JSOL file from Doccano to generate the RDF graph in .TTL format. From this TTL file it is possible to execute SPARQL queries, exploiting the properties of the C2RM metamodel. It also retrieves the lists of inferences from Etapa-5 Run NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb) to generate graph visualization and integrate it into IDEA-C2-KG.
 
 # Publications
 - Article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: XXXX**)
