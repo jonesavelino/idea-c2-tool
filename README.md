@@ -14,13 +14,13 @@ IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge g
   - Doutrina de Operações (https://bdex.eb.mil.br/jspui/bitstream/1/848/3/EB70-MC-10.223-%20Opera%c3%a7%c3%b5es)
   - Manual de Campanha - As comunicações nas operações (https://bdex.eb.mil.br/jspui/bitstream/123456789/7073/1/EB70-MC-10.246_PDF.pdf)
 
-# Pre-requisite
+# Pre-requisites
 - [PreAnoTeTool] (https://github.com/jonesavelino/preanotetool) responsible for pre-annotating the texts in the corpus using the Command and Control Relations Metamodel (C2RM) of the IDEA-C2 approach.
 - [Python 3.10.12] (https://www.python.org/downloads/release/python-31012/) programming language to run the libraries and development.
 - [Google Colab Pro] Integrated Development Environment (IDE), in notebook format, for implementing and executing source code, using the Python programming language.
 - [GraphDB 9.11] (https://www.ontotext.com/products/graphdb/graphdb-free/) is a database for dealing with Graphs that allows the manipulation of data based on RDF Graphs and uses the SPARQL language for retrieval and query processing. (Not mandatory!).
 
-- **Bibliotecas**: 
+- **Libraries**: 
   - [SpaCy 3.5] it is a machine learning library focused on Natural Language Processing (NLP). 
   - [Pipeline] pt_core_news_sm (https://spacy.io/models/pt) (customizable)
   - [Architecture] spacy-transformers.TransformerModel.v3 (https://spacy.io/universe/project/spacy-transformers)
