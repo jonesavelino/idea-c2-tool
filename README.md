@@ -1,4 +1,4 @@
-This repository contains the source code and data used in the experiment for the article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: XXXX**)
+This repository contains the source code and data used in the experiment for the article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**ID Number IEEE LA: 9930**)
 
 # IDEA-C2-Tool
 IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge graphs basEd on Artificial intelligence of C2 Domain), which is a hybrid approach hat supports Domain Model (DM) development by combining Data-Driven (DD) and Theory-Driven (TD) components, leveraging semantic resources and a metamodel to produce a fine-tuned Large Languagem Model (LLM) and a Knowledge Graph (KG) focused on the military domain.
