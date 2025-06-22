@@ -45,7 +45,7 @@ model application;
     - 4.1) Step 6: Conceptual Modeling: (Etapa 6 - Graph.ipynb): Retrieves the curated .JSOL file from Doccano to generate the RDF graph in .TTL format. From this TTL file it is possible to execute SPARQL queries, exploiting the properties of the C2RM metamodel. It also retrieves the lists of inferences from Etapa-5 Run NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb) to generate graph visualization and integrate it into IDEA-C2-KG.
 
 # Publications
-- Article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: XXXX**)
+- Article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: 9947**)
 
 # Acknowledgments
 - This research has been funded by FINEP/DCT/FAPEB (no. 2904/20 - 01.20.0272.00) under the “Systems of Command and Control Systems” project (“Sistemas de Sistemas de Comando e Controle”, in Portuguese). We would also like to thank the domain experts who contributed to the experiment.
