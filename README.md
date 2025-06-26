@@ -1,4 +1,4 @@
-This repository contains the source code and data used in the experiment for the article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**ID Number IEEE LA: 9947**)
+This repository contains the source code and data used in the experiment for the article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**ID Number IEEE LA: 9961**)
 
 # IDEA-C2-Tool
 IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge graphs basEd on Artificial intelligence of C2 Domain), which is a hybrid approach hat supports Domain Model (DM) development by combining Data-Driven (DD) and Theory-Driven (TD) components, leveraging semantic resources and a metamodel to produce a fine-tuned Large Languagem Model (LLM) and a Knowledge Graph (KG) focused on the military domain.
@@ -45,7 +45,7 @@ model application;
     - 4.1) Step 6: Conceptual Modeling: (Etapa 6 - Graph.ipynb): Retrieves the curated .JSOL file from Doccano to generate the RDF graph in .TTL format. From this TTL file it is possible to execute SPARQL queries, exploiting the properties of the C2RM metamodel. It also retrieves the lists of inferences from Etapa-5 Run NE + RE (IDEA-ETAPA 5-RodaModeloNEReRE.ipynb) to generate graph visualization and integrate it into IDEA-C2-KG.
 
 # Publications
-- Article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: 9947**)
+- Article submitted to the IEEE Latin American Transactions, entitled "Towards a conceptual modeling hybrid approach combining LLM and a metamodel". (**Submission ID: 9961**)
 
 # Acknowledgments
 - This research has been funded by FINEP/DCT/FAPEB (no. 2904/20 - 01.20.0272.00) under the “Systems of Command and Control Systems” project (“Sistemas de Sistemas de Comando e Controle”, in Portuguese). We would also like to thank the domain experts who contributed to the experiment.
