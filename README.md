@@ -21,7 +21,7 @@ IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge g
     - DEV: **/outputs/Dataset_exporta_anotacao-dev.jsonl**
     - TRAIN: **/outputs/Dataset_exporta_anotacao-train.jsonl**
     - TEST: **/outputs/Dataset_exporta_anotacao-test.jsonl**
-  -  **SPLIT -> SPACY**
+  - **SPLIT -> SPACY**
     - DEV: **/outputs/Dataset_exporta_anotacao-dev.spacy**
     - TRAIN: **/outputs/Dataset_exporta_anotacao-train.spacy**
     - TEST: **/outputs/Dataset_exporta_anotacao-test.spacy**
