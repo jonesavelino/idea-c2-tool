@@ -13,7 +13,18 @@ IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge g
   - Doutrina de Garantia da Lei e da Ordem (GLO) (https://www.gov.br/defesa/pt-br/arquivos/ajuste-01/2014/mes02/md33-m-10-garantia-da-lei-e-da-ordem-2a-ed-2014-31-jan.pdf)
   - Doutrina de Operações (https://bdex.eb.mil.br/jspui/bitstream/1/848/3/EB70-MC-10.223-%20Opera%c3%a7%c3%b5es)
   - Manual de Campanha - As comunicações nas operações (https://bdex.eb.mil.br/jspui/bitstream/123456789/7073/1/EB70-MC-10.246_PDF.pdf)
-
+- **Corpus**:
+  - Pre-annotated Corpus: **/texts/Corpus-PreAnotated.jsonl**
+  - Curate Corpus: **/texts/Corpus-Curate.jsonl**
+- **Dataset Fine-tuning (DEV/TRAIN: 80% and TEST: 20%)**:
+  - **SPLIT -> JSONL**
+    - DEV: **/outputs/Dataset_exporta_anotacao-dev.jsonl**
+    - TRAIN: **/outputs/Dataset_exporta_anotacao-train.jsonl**
+    - TEST: **/outputs/Dataset_exporta_anotacao-test.jsonl**
+  -  SPLIT -> SPACY
+    - DEV: **/outputs/Dataset_exporta_anotacao-dev.spacy**
+    - TRAIN: **/outputs/Dataset_exporta_anotacao-train.spacy**
+    - TEST: **/outputs/Dataset_exporta_anotacao-test.spacy**
 # Pre-requisites
 - [PreAnoTeTool] (https://github.com/jonesavelino/preanotetool) responsible for pre-annotating the texts in the corpus using the Command and Control Relations Metamodel (C2RM) of the IDEA-C2 approach.
 - [Python 3.10.12] (https://www.python.org/downloads/release/python-31012/) programming language to run the libraries and development.
