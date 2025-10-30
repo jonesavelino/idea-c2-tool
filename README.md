@@ -25,6 +25,9 @@ IDEA-C2-Tool is a software prototype based on IDEA-C2 (generatIon of knowleDge g
     - DEV: **/outputs/Dataset_exporta_anotacao-dev.spacy**
     - TRAIN: **/outputs/Dataset_exporta_anotacao-train.spacy**
     - TEST: **/outputs/Dataset_exporta_anotacao-test.spacy**
+  - **GRAPH DATABASE -> RDF TURTLE**
+    - FILE 1: **/outputs/corpus_completo_curado.ttl** (RDF-Turtle)
+    - FILE 2: **/outputs/corpus_completo_curado.json** (JSON)
 # Pre-requisites
 - [PreAnoTeTool] (https://github.com/jonesavelino/preanotetool) responsible for pre-annotating the texts in the corpus using the Command and Control Relations Metamodel (C2RM) of the IDEA-C2 approach.
 - [Python 3.10.12] (https://www.python.org/downloads/release/python-31012/) programming language to run the libraries and development.
